@@ -49,7 +49,7 @@ export default function HomeView() {
                                         Delete
                                     </button>
                                     <Link href={"/home"} className='btn btn-primary btn-sm '>
-                                        Back
+                                        Return
                                     </Link>
                                 </div>
                                 <div className='flex '>
