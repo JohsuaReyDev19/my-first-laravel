@@ -6,6 +6,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AboutController;
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -31,5 +32,6 @@ Route::get('/home',action: [HomeController::class, 'index'])->name('home');
 Route::get('/home-create',action: [HomeController::class, 'createTodos'])->name('home.create');
 Route::get('/home/{todoId}', action: [HomeController::class, 'show'])->name('home.show');
 Route::get('/contact',action: [ContactController::class, 'contact'])->name('contact');
+Route::get('/about',action: [ContactController::class, 'about'])->name('about');
 
 require __DIR__.'/auth.php';

@@ -38,6 +38,14 @@ export default function AuthenticatedLayout({ header, children }) {
                                 >
                                     Home
                                 </NavLink>
+
+                                <NavLink
+                                    href={route('about')}
+                                    active={route().current('about')}
+                                >
+                                    About
+                                </NavLink>
+
                                 <NavLink
                                     href={route('contact')}
                                     active={route().current('contact')}
