@@ -52,6 +52,12 @@ export default function AuthenticatedLayout({ header, children }) {
                                 >
                                     Contact
                                 </NavLink>
+                                <NavLink
+                                    href={route('settings')}
+                                    active={route().current('settings')}
+                                >
+                                    Settings
+                                </NavLink>
                             </div>
                         </div>
 
