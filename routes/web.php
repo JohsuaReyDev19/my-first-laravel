@@ -33,5 +33,6 @@ Route::get('/home-create',action: [HomeController::class, 'createTodos'])->name(
 Route::get('/home/{todoId}', action: [HomeController::class, 'show'])->name('home.show');
 Route::get('/contact',action: [ContactController::class, 'contact'])->name('contact');
 Route::get('/about',action: [ContactController::class, 'about'])->name('about');
+Route::get('/settings',action: [ContactController::class, 'settings'])->name('settings');
 
 require __DIR__.'/auth.php';
